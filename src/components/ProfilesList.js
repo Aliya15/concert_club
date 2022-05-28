@@ -1,10 +1,14 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import {useEffect, useState} from "react";
 import './ProfilesList.scss'
+import {
+    useNavigate
+} from "react-router-dom";
 
 export default function ProfilesList() {
     const [profiles, setProfiles] = useState();
+    const navigate = useNavigate();
+    let i = 0;
 
     const getProfilesList = async () => {
         const list = await fetch('https://my-json-server.typicode.com/aliya15/concert_club/profilesList')
@@ -15,8 +19,7 @@ export default function ProfilesList() {
 
     useEffect(() => {
         getProfilesList().then();
-        console.log(profiles)
-    })
+    }, [])
 
     return (
         <div className='profilesList'>
@@ -28,10 +31,11 @@ export default function ProfilesList() {
                 {
                     profiles?.map((item) => {
                         return (
-                            <div className='profilesList_profiles_item'>
-                                <h4>{item.name}</h4>
+                            <div key={++i} className='profilesList_profiles_item'>
+                                <h4>{`${item.name} ${item.surname}`}</h4>
                                 <p>{item.city}</p>
-                                <Button>Смотреть профиль</Button>
+                                <button onClick={() => navigate(`../profile/${item.name}_${item.surname}`, {  state: { name: item.name, surname: item.surname } })}>Смотреть профиль
+                                </button>
                             </div>
                         )
                     })

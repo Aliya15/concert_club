@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Open+Sans:wght@600&display=swap');
+
+.profile-name {
+display: flex;
+
+  .profile-name_frame {
+    width: 54px;
+    height: 91px;
+    box-sizing: border-box;
+    border-right: 1px solid #000000;
+  }
+
+  .profile-name_title {
+    width: 1008px;
+    box-sizing: border-box;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    h1 {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+      color: #000000;
+    }
+  }
+}
+
+.profile-information {
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+
+  .profile-information_frame {
+    width: 54px;
+    height: 45px;
+    box-sizing: border-box;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+  }
+
+  .profile-information_item {
+    height: 45px;
+    box-sizing: border-box;
+    border-right: 1px solid #000000;
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #000000;
+      margin: 11px 23px;
+    }
+  }
+
+  .profile-information_button {
+    width: 182px;
+    height: 45px;
+    background: #101010;
+    border: 1px solid #0D1E4B;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-sizing: border-box;
+
+  }
+
+  .second {
+    width: 247px;
+  }
+}
+
+.profile-posts {
+  text-align: start;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  height: 247px;
+  margin: 25px 0 0;
+
+  h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    margin: 16px 53px 15px;
+  }
+
+  .profile-posts_item {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 53px;
+
+    .profile-posts_item_text {
+      color: rgba(0, 0, 0, 0.41);
+      font-size: 11px;
+    }
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: capitalize;
+      color: #000000;
+      margin: 14px 0 0;
+    }
+
+    p{
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      color: #000000;
+    }
+
+    .profile-posts_item_info {
+      height: 143px;
+      width: 490px;
+      box-sizing: border-box;
+      border: 1px solid #000000;
+      padding: 0 35px 17px;
+
+      .profile-posts_item_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.profile-publications {
+  box-sizing: border-box;
+  margin: 0 53px;
+  text-align: start;
+
+  h2 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    margin: 22px 0;
+  }
+
+  .profile-publications_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+
+    .profile-publications_item {
+      width: 154px;
+      height: 154px;
+      box-sizing: border-box;
+      border: 1px solid #000000;
+
+    }
+    .profile-publications_item:nth-child(1) {
+      background: #63B4EE;
+    }
+    .profile-publications_item:nth-child(2) {
+      background: #2B9FF2;
+    }
+    .profile-publications_item:nth-child(3) {
+      background: #547FED;
+    }
+    .profile-publications_item:nth-child(4) {
+      background: #4366E1;
+    }
+    .profile-publications_item:nth-child(5) {
+      background: #2040B0;
+    }
+    .profile-publications_item:nth-child(6) {
+      background: #0C257C;
+    }
+  }
+}

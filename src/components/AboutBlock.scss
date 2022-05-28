@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Open+Sans:wght@600&display=swap');
+
 .aboutBlock {
   width: 1116px;
   display: flex;
@@ -5,26 +7,68 @@
   margin-top: 47px;
 
   .aboutBlock_description {
-    margin-left: 60px;
+    margin: 0 60px;
     width: 439px;
     text-align: start;
-    
+    height: 271px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     h2 {
+      margin: 0;
       font-style: normal;
       font-weight: 500;
       font-size: 35px;
     }
-    p {
 
+    p {
+      margin: 0;
     }
   }
 
   .aboutBlock_form {
     box-sizing: border-box;
     margin-right: 60px;
-    margin-left: 68px;
     height: 272px;
     width: 559px;
     border: 1px solid #DADADA;
+
+    h4 {
+      margin: 13px 0 13px 26px;
+      font-family: 'Open Sans', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      color: #000000;
+      text-align: start;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      flex-direction: column;
+      margin: 25px;
+    }
+
+    .aboutBlock_form_input {
+      width: 500px;
+      height: 117px;
+    }
+
+    .aboutBlock_form_submit {
+      margin: 25px 0;
+      padding: 10px 20px;
+      width: 101px;
+      height: 35px;
+      background: #101010;
+      border: 1px solid #0D1E4B;
+      font-family: 'Open Sans', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      color: #FFFFFF;
+    }
   }
 }

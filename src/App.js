@@ -1,22 +1,19 @@
 import './App.scss';
-import Header from "./components/Header";
-import Poster from "./components/Poster";
-import ProfilesList from "./components/ProfilesList";
-import AboutBlock from "./components/AboutBlock";
-import Footer from "./components/Footer";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import MainPage from "./components/MainPage";
+import OpenProfile from "./components/OpenProfile";
+import NotFoundTheLocation from "./components/NotFoundTheLocation";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-        <main>
-            <Poster />
-            <ProfilesList />
-            <AboutBlock />
-        </main>
-        <Footer />
-    </div>
-  );
+export default function App() {
+    return (
+        <div className="App">
+            <Router>
+                <Routes>
+                    <Route path="/" element={<MainPage/>}/>
+                    <Route path="/profile/:name" element={<OpenProfile/>}/>
+                    <Route path="*" element={<NotFoundTheLocation/>}/>
+                </Routes>
+            </Router>
+        </div>
+    );
 }
-
-export default App;
