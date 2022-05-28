@@ -28,8 +28,9 @@
   "profile": {
       "name": "Семен",
       "surname": "Иванов",
+      "city": "Санкт-Петербург",
       "email": "semenivanov@fff.com",
-      "phone": "+11111111111",
+      "phone": "+1(111)111-11-11",
       "website": "#",
       "id": "dfaher2"
     },
