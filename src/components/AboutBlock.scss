@@ -1,0 +1,30 @@
+.aboutBlock {
+  width: 1116px;
+  display: flex;
+  align-items: center;
+  margin-top: 47px;
+
+  .aboutBlock_description {
+    margin-left: 60px;
+    width: 439px;
+    text-align: start;
+    
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+    }
+    p {
+
+    }
+  }
+
+  .aboutBlock_form {
+    box-sizing: border-box;
+    margin-right: 60px;
+    margin-left: 68px;
+    height: 272px;
+    width: 559px;
+    border: 1px solid #DADADA;
+  }
+}
