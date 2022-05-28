@@ -25,13 +25,15 @@
     "url": "#"
   }
  ],
- "profile": [{
+ "profile": [
+ {
     "name": "Семен",
     "surname": "Иванов",
     "email": "semenivanov@fff.com",
     "phone": "+11111111111",
     "website": "#",
- }],
+ }
+ ],
  "posts": [  
   {
     "id": 1,
