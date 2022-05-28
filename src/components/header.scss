@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+
+header {
+    height: 70px;
+    width: 1116px;
+    background-color: #101010;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 60px;
+
+    .header_title {
+      color: #FFFFFF;
+      font-family: 'Alegreya Sans SC', serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    .header_buttons {
+      width: 423px;
+      display: flex;
+      justify-content: space-between;
+
+      .MuiButton-root {
+        background-color: #FFFFFF;
+        color: #000000;
+        padding: 10px 20px;
+        width: 205px;
+        height: 40px;
+
+        span {
+          font-family: 'Proxima Nova', serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

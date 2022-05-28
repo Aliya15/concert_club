@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../../public/fonts/Proxima_Nova/proximanova_regular.ttf');
+}
+
+.poster {
+  background-image: url('../../public/images/banner.jpg');
+  height: 439px;
+  background-size: cover;
+  width: 1116px;
+
+  .poster_title {
+    color: #FFFFFF;
+    font-family: 'Alegreya Sans SC', serif;
+    padding-top: 157px;
+
+    h2 {
+      margin: 0;
+      font-size: 50px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+  .poster_button {
+    margin-top: 96px;
+
+    .MuiButton-root {
+      background-color: #FFFFFF;
+      color: #000000;
+      padding: 10px 20px;
+      width: 205px;
+      height: 40px;
+
+      span {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+      }
+    }
+  }
+}

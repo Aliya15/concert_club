@@ -1,0 +1,14 @@
+.profilesList {
+  width: 1116px;
+
+  .profilesList_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 60px;
+  }
+
+  .profilesList_profiles {
+    margin: 0 60px;
+  }
+}
