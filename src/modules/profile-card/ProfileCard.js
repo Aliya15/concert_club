@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import './ProfileCard.scss';
-
+import apiClient from '../../api/ApiClient';
 
 export default function ProfileCard() {
     const params = useParams();
@@ -12,18 +12,17 @@ export default function ProfileCard() {
     const surname = navName.split('_')[1];
 
     const getProfile = async () => {
-        const list = await fetch('https://my-json-server.typicode.com/aliya15/concert_club/profile');
-        const listToJson = await list.json();
+        const list = await apiClient('/profile');
+        const listToJson = await list.data;
         await setChosenProfile(listToJson);
     };
 
     const getPosts = async () => {
-        const posts = await fetch('https://my-json-server.typicode.com/aliya15/concert_club/posts');
-        const postsToJson = await posts.json();
+        const posts = await apiClient('/posts');
+        const postsToJson = await posts.data;
         postsToJson.filter(item => item.name === name && item.surname === surname);
         await setProfilesPosts(postsToJson);
     };
-
 
     useEffect(() => {
         getProfile().then();
@@ -59,10 +58,9 @@ export default function ProfileCard() {
             <div className="profile-posts">
                 <h2>Посты</h2>
                 <div className="profile-posts_item">
-                    {profilesPosts?.map((item, index) => {
+                    {profilesPosts?.map((item) => {
                         return (
-                            // TODO Change to ID
-                            <div key={index} className="profile-posts_item_info">
+                            <div key={item.id} className="profile-posts_item_info">
                                 <div className="profile-posts_item_title">
                                     <h2>{item.title}</h2>
                                     <p>{item.date}</p>

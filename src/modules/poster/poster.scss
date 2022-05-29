@@ -1,15 +1,10 @@
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('public/fonts/Proxima_Nova/proximanova_regular.ttf');
-}
-
 .poster {
-  background-image: url('public/images/banner.jpg');
+  background-image: url('../../assets/images/banner.jpg');
   height: 439px;
   background-size: cover;
   width: 1116px;
 
-  .poster_title {
+  &_title {
     color: #FFFFFF;
     font-family: 'Alegreya Sans SC', serif;
     padding-top: 157px;
@@ -25,7 +20,7 @@
     }
   }
 
-  .poster_button {
+  &_button {
     margin-top: 96px;
 
     .MuiButton-root {

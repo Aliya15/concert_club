@@ -2,14 +2,15 @@ import * as React from 'react';
 import {useEffect, useState} from 'react';
 import './ProfilesList.scss';
 import {useNavigate} from 'react-router-dom';
+import apiClient from '../../api/ApiClient';
 
 export default function ProfilesList() {
     const [profiles, setProfiles] = useState();
     const navigate = useNavigate();
 
     const getProfilesList = async () => {
-        const list = await fetch('https://my-json-server.typicode.com/aliya15/concert_club/profilesList');
-        const listToJson = await list.json();
+        const list = await apiClient('/profilesList');
+        const listToJson = await list.data;
         await setProfiles(listToJson);
         console.log(listToJson);
     };
