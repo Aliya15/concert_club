@@ -1,8 +1,8 @@
 import './App.scss';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import MainPage from "./components/MainPage";
-import OpenProfile from "./components/OpenProfile";
-import NotFoundTheLocation from "./components/NotFoundTheLocation";
+import MainPage from './pages/MainPage';
+import ProfilePage from './pages/ProfilePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
     return (
@@ -10,8 +10,8 @@ export default function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
-                    <Route path="/profile/:name" element={<OpenProfile/>}/>
-                    <Route path="*" element={<NotFoundTheLocation/>}/>
+                    <Route path="/profile/:name" element={<ProfilePage/>}/>
+                    <Route path="*" element={<NotFoundPage/>}/>
                 </Routes>
             </Router>
         </div>

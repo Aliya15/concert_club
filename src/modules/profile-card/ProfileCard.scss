@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Open+Sans:wght@600&display=swap');
 
 .profile-name {
-display: flex;
+  display: flex;
 
   .profile-name_frame {
     width: 54px;
@@ -102,6 +102,7 @@ display: flex;
       color: rgba(0, 0, 0, 0.41);
       font-size: 11px;
     }
+
     h2 {
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
@@ -112,7 +113,7 @@ display: flex;
       margin: 14px 0 0;
     }
 
-    p{
+    p {
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
@@ -162,21 +163,27 @@ display: flex;
       border: 1px solid #000000;
 
     }
+
     .profile-publications_item:nth-child(1) {
       background: #63B4EE;
     }
+
     .profile-publications_item:nth-child(2) {
       background: #2B9FF2;
     }
+
     .profile-publications_item:nth-child(3) {
       background: #547FED;
     }
+
     .profile-publications_item:nth-child(4) {
       background: #4366E1;
     }
+
     .profile-publications_item:nth-child(5) {
       background: #2040B0;
     }
+
     .profile-publications_item:nth-child(6) {
       background: #0C257C;
     }
