@@ -4,82 +4,57 @@
             "name": "Семен",
             "surname": "Иванов",
             "city": "Санкт-Петербург",
+            "email": "semenivanov@fff.com",
+            "phone": "+1(111)111-11-11",
+            "website": "#",
             "id": "semenivanov"
         },
         {
             "name": "Надежда",
             "surname": "Николаева",
             "city": "Москва",
+            "email": "nadezhdanikolaeva@fff.com",
+            "phone": "+1(111)111-11-11",
+            "website": "#",
             "id": "nadezhdanikolaeva"
         },
         {
             "name": "Петр",
             "surname": "Сабуров",
             "city": "Сочи",
+            "email": "petrsaburov@fff.com",
+            "phone": "+1(111)111-11-11",
+            "website": "#",
             "id": "petrsaburov"
         },
         {
             "name": "Мария",
             "surname": "Гончарова",
             "city": "Москва",
+            "email": "mariyagoncharova@fff.com",
+            "phone": "+1(111)111-11-11",
+            "website": "#",
             "id": "mariyagoncharova"
         }
     ],
-    "profile/semenivanov": {
-        "name": "Семен",
-        "surname": "Иванов",
-        "city": "Санкт-Петербург",
-        "email": "semenivanov@fff.com",
-        "phone": "+1(111)111-11-11",
-        "website": "#",
-        "id": "semenivanov"
-    },
-    "profile/nadezhdanikolaeva": {
-        "name": "Надежда",
-        "surname": "Николаева",
-        "city": "Москва",
-        "email": "nadezhdanikolaeva@fff.com",
-        "phone": "+1(111)111-11-11",
-        "website": "#",
-        "id": "nadezhdanikolaeva"
-    },
-    "profile/petrsaburov": {
-        "name": "Петр",
-        "surname": "Сабуров",
-        "city": "Сочи",
-        "email": "petrsaburov@fff.com",
-        "phone": "+1(111)111-11-11",
-        "website": "#",
-        "id": "petrsaburov"
-    },
-    "profile/mariyagoncharova": {
-        "name": "Мария",
-        "surname": "Гончарова",
-        "city": "Москва",
-        "email": "mariyagoncharova@fff.com",
-        "phone": "+1(111)111-11-11",
-        "website": "#",
-        "id": "mariyagoncharova"
-    },
-    "posts/semenivanov": [
+    "posts": [
         {
+            "id": 1,
             "name": "Семен",
             "surname": "Иванов",
-            "id": 1,
+            "userId": "semenivanov",
             "title": "Twenty One Pilots",
             "date": "12.01.22",
             "text": "Просто шикарный альбом, Пилоты после Blurryface решили не идти проторенной дорожкой, и сделали что то новое. На мой взгляд у них на 100% получилось, альбом слушается на одном дыхании, каждая песня чем то запоминается, естественно нужно понимать тексты, чтобы вникнуть до конца во весь сюжет и атмосферу альбома...."
         },
         {
+            "id": 2,
             "name": "Семен",
             "surname": "Иванов",
-            "id": 2,
+            "userId": "semenivanov",
             "title": "Twenty One Pilots",
             "date": "12.01.22",
             "text": "Просто шикарный альбом, Пилоты после Blurryface решили не идти проторенной дорожкой, и сделали что то новое. На мой взгляд у них на 100% получилось, альбом слушается на одном дыхании, каждая песня чем то запоминается, естественно нужно понимать тексты, чтобы вникнуть до конца во весь сюжет и атмосферу альбома...."
         }
-    ],
-    "posts/nadezhdanikolaeva": [],
-    "posts/petrsaburov": [],
-    "posts/mariyagoncharova": []
+    ]
 }

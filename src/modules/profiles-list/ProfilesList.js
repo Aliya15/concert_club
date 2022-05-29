@@ -9,10 +9,9 @@ export default function ProfilesList() {
     const navigate = useNavigate();
 
     const getProfilesList = async () => {
-        const list = await apiClient('/profilesList');
+        const list = await apiClient('/profiles-list');
         const listToJson = await list.data;
         await setProfiles(listToJson);
-        console.log(listToJson);
     };
 
     useEffect(() => {
@@ -27,10 +26,9 @@ export default function ProfilesList() {
             </div>
             <div className="profilesList_profiles">
                 {
-                    profiles?.map((item, index) => {
+                    profiles?.map((item) => {
                         return (
-                            // TODO Chnage index to ID
-                            <div key={index} className="profilesList_profiles_item">
+                            <div key={item.id} className="profilesList_profiles_item">
                                 <h4>{`${item.name} ${item.surname}`}</h4>
                                 <p>{item.city}</p>
                                 <button onClick={() => navigate(`../profile/${item.name}_${item.surname}`, {
