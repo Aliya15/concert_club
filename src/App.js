@@ -11,6 +11,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
                     <Route path="/profile/:name" element={<ProfilePage/>}/>
+                    <Route path="/post/:id" element={''}/>
                     <Route path="*" element={<NotFoundPage/>}/>
                 </Routes>
             </Router>

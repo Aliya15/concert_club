@@ -3,17 +3,17 @@
   box-sizing: border-box;
   border-bottom: 1px solid #000000;
   border-top: 1px solid #000000;
-  height: 247px;
-  margin: 25px 0 0;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-bottom: 33px;
 
   &_wrapper {
     width: 1116px;
   }
 
-  h2 {
+  &_title {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -29,40 +29,52 @@
     column-gap: 24px;
     box-sizing: border-box;
     justify-content: space-between;
+    cursor: pointer;
 
     &_text {
-      color: rgba(0, 0, 0, 0.41);
-      font-size: 11px;
-    }
-
-    h2 {
-      font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 15px;
-      text-transform: capitalize;
-      color: #000000;
-      margin: 0;
-    }
-
-    p {
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
-      font-size: 10px;
-      color: #000000;
-      margin: 0;
+      font-size: 12px;
+      line-height: 17px;
+      color: rgba(0, 0, 0, 0.41);
     }
 
     &_info {
       box-sizing: border-box;
       border: 1px solid #000000;
-      padding: 24px;
+      padding: 14px 34px;
+      position: relative;
+    }
 
-      &_title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &_title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-text {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: capitalize;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+      }
+
+      &-date {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: capitalize;
+        position: absolute;
+        color: #000000;
+        top: 14px;
+        right: 22px;
+        margin: 0;
       }
     }
   }
