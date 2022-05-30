@@ -15,36 +15,38 @@ export default function ProfilesList() {
     };
 
     useEffect(() => {
-        getProfilesList().then();
+        getProfilesList();
     }, []);
 
     return (
-        <div className="profilesList">
-            <div className="profilesList_title">
-                <h2>Купили билеты</h2>
-                <p>932/1000</p>
+        <section className="profiles-list">
+            <div className="profiles-list_wrapper">
+                <div className="profiles-list_title">
+                    <h2>Купили билеты</h2>
+                    <p>932/1000</p>
+                </div>
+                <div className="profiles-list_profiles">
+                    {
+                        profiles?.map((item) => {
+                            return (
+                                <div key={item.id} className="profiles-list_profiles_item">
+                                    <h4>{`${item.name} ${item.surname}`}</h4>
+                                    <p>{item.city}</p>
+                                    <button onClick={() => navigate(`../profile/${item.id}`, {
+                                        state: {
+                                            ...item
+                                        }
+                                    })}
+                                    >
+                                        Смотреть профиль
+                                    </button>
+                                </div>
+                            );
+                        })
+                    }
+                </div>
             </div>
-            <div className="profilesList_profiles">
-                {
-                    profiles?.map((item) => {
-                        return (
-                            <div key={item.id} className="profilesList_profiles_item">
-                                <h4>{`${item.name} ${item.surname}`}</h4>
-                                <p>{item.city}</p>
-                                <button onClick={() => navigate(`../profile/${item.name}_${item.surname}`, {
-                                    state: {
-                                        name: item.name,
-                                        surname: item.surname
-                                    }
-                                })}>
-                                    Смотреть профиль
-                                </button>
-                            </div>
-                        );
-                    })
-                }
-            </div>
-        </div>
+        </section>
     );
 }
 

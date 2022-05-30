@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Open+Sans:wght@600&display=swap');
 
-footer {
-  width: 1116px;
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
 
-  .footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    height: 167px;
-    margin: 0 60px;
+  &_wrapper {
+    display: grid;
+    width: 1116px;
     text-align: left;
+    grid-template-columns: max-content auto;
+    column-gap: 38px;
+  }
 
-    h2 {
-      margin: 0 0 79px 0;
-      font-family: 'Alegreya Sans SC', serif;
-      font-style: normal;
-      font-weight: 500;
-    }
+  h2 {
+    margin: 0;
+    font-family: 'Alegreya Sans SC', serif;
+    font-style: normal;
+    font-weight: 500;
+  }
 
-    p {
-      width: 838px;
-      height: 72px;
-      margin: 0 0 28px 38px;
-      font-family: 'Open Sans', serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      color: #939393;
-    }
+  p {
+    height: 72px;
+    margin: 0;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #939393;
   }
 }

@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Open+Sans:wght@600&display=swap');
 
-.aboutBlock {
-  width: 1116px;
+.about-block {
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-top: 47px;
 
-  .aboutBlock_description {
-    margin: 0 60px;
-    width: 439px;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1116px;
+  }
+
+  &_description {
+    margin-right: 60px;
     text-align: start;
     height: 271px;
     display: flex;
@@ -27,9 +31,8 @@
     }
   }
 
-  .aboutBlock_form {
+  &_form {
     box-sizing: border-box;
-    margin-right: 60px;
     height: 272px;
     width: 559px;
     border: 1px solid #DADADA;
@@ -52,12 +55,12 @@
       margin: 25px;
     }
 
-    .aboutBlock_form_input {
+    &_input {
       width: 500px;
       height: 117px;
     }
 
-    .aboutBlock_form_submit {
+    &_submit {
       margin: 25px 0;
       padding: 10px 20px;
       width: 101px;

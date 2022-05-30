@@ -1,12 +1,15 @@
 import './header.scss';
 import * as React from 'react';
 import Button from '@mui/material/Button';
+import {useNavigate} from 'react-router-dom';
 
 export default function Header() {
+    const navigate = useNavigate();
+
     return (
-        <header>
-            <div className="header">
-                <h1 className="header_title">Concert Club</h1>
+        <header className="header">
+            <div className="header_wrapper">
+                <h1 className="header_title" onClick={() => navigate(`/`)}>Concert Club</h1>
                 <div className="header_buttons">
                     <Button variant="contained"><span>Версия для слабовидящих</span></Button>
                     <Button variant="contained"><span>Мой профиль</span></Button>

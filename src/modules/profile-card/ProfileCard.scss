@@ -2,19 +2,29 @@
 
 .profile-name {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #000000;
 
-  .profile-name_frame {
-    width: 54px;
-    height: 91px;
-    box-sizing: border-box;
-    border-right: 1px solid #000000;
+  &_wrapper {
+    border-top: 1px solid #000000;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }
 
-  .profile-name_title {
-    width: 1008px;
+  &_frame {
     box-sizing: border-box;
-    border-right: 1px solid #000000;
     border-bottom: 1px solid #000000;
+    flex-grow: 1;
+  }
+
+  &_title {
+    width: 1116px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-top: none;
 
     h1 {
       font-family: 'Alegreya Sans SC', sans-serif;
@@ -22,6 +32,7 @@
       font-weight: 500;
       font-size: 35px;
       color: #000000;
+      margin-left: 40px;
     }
   }
 }
@@ -29,20 +40,25 @@
 .profile-information {
   display: flex;
   box-sizing: border-box;
-  border-bottom: 1px solid #000000;
+  width: 100%;
+  justify-content: center;
 
-  .profile-information_frame {
-    width: 54px;
-    height: 45px;
-    box-sizing: border-box;
-    border-right: 1px solid #000000;
-    border-top: 1px solid #000000;
+  &_wrapper {
+    display: flex;
+    width: 1116px;
   }
 
-  .profile-information_item {
+  &_item {
     height: 45px;
     box-sizing: border-box;
     border-right: 1px solid #000000;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+
+    &:first-child {
+      border-left: 1px solid #000000;
+    }
 
     p {
       font-family: 'Open Sans', sans-serif;
@@ -54,7 +70,7 @@
     }
   }
 
-  .profile-information_button {
+  &_button {
     width: 182px;
     height: 45px;
     background: #101010;
@@ -82,6 +98,13 @@
   border-top: 1px solid #000000;
   height: 247px;
   margin: 25px 0 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &_wrapper {
+    width: 1116px;
+  }
 
   h2 {
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -89,16 +112,18 @@
     font-weight: 500;
     font-size: 32px;
     color: #000000;
-    margin: 16px 53px 15px;
+    margin: 16px 0 16px;
   }
 
-  .profile-posts_item {
-    display: flex;
+  &_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 24px;
     box-sizing: border-box;
     justify-content: space-between;
-    margin: 0 53px;
 
-    .profile-posts_item_text {
+    &_text {
       color: rgba(0, 0, 0, 0.41);
       font-size: 11px;
     }
@@ -110,7 +135,7 @@
       font-size: 15px;
       text-transform: capitalize;
       color: #000000;
-      margin: 14px 0 0;
+      margin: 0;
     }
 
     p {
@@ -119,16 +144,16 @@
       font-weight: 400;
       font-size: 10px;
       color: #000000;
+      margin: 0;
     }
 
-    .profile-posts_item_info {
-      height: 143px;
+    &_info {
       width: 490px;
       box-sizing: border-box;
       border: 1px solid #000000;
-      padding: 0 35px 17px;
+      padding: 24px;
 
-      .profile-posts_item_title {
+      &_title {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -141,6 +166,12 @@
   box-sizing: border-box;
   margin: 0 53px;
   text-align: start;
+  display: flex;
+  justify-content: center;
+
+  &_wrapper {
+    width: 1116px;
+  }
 
   h2 {
     font-family: "Alegreya Sans SC", sans-serif;
@@ -151,40 +182,39 @@
     margin: 22px 0;
   }
 
-  .profile-publications_block {
+  &_block {
     display: flex;
     justify-content: space-between;
     margin-bottom: 41px;
+  }
 
-    .profile-publications_item {
-      width: 154px;
-      height: 154px;
-      box-sizing: border-box;
-      border: 1px solid #000000;
+  &_item {
+    width: 154px;
+    height: 154px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
 
-    }
-
-    .profile-publications_item:nth-child(1) {
+    &:nth-child(1) {
       background: #63B4EE;
     }
 
-    .profile-publications_item:nth-child(2) {
+    &:nth-child(2) {
       background: #2B9FF2;
     }
 
-    .profile-publications_item:nth-child(3) {
+    &:nth-child(3) {
       background: #547FED;
     }
 
-    .profile-publications_item:nth-child(4) {
+    &:nth-child(4) {
       background: #4366E1;
     }
 
-    .profile-publications_item:nth-child(5) {
+    &:nth-child(5) {
       background: #2040B0;
     }
 
-    .profile-publications_item:nth-child(6) {
+    &:nth-child(6) {
       background: #0C257C;
     }
   }

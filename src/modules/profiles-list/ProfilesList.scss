@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Open+Sans:wght@600&display=swap');
 
-.profilesList {
-  width: 1116px;
+.profiles-list {
+  display: flex;
+  justify-content: center;
 
-  .profilesList_title {
+  &_wrapper {
+    width: 1116px;
+  }
+
+  &_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 60px;
   }
 
-  .profilesList_profiles {
-    margin: 0 60px;
+  &_profiles {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    .profilesList_profiles_item {
+    &_item {
       border: 1px solid #DADADA;
-      width: 239px;
+      min-width: 239px;
+      width: 100%;
       height: 143px;
       box-sizing: border-box;
-      margin-left: 13px;
       text-align: start;
+
+      &:not(:last-child) {
+        margin-right: 13px;
+      }
 
       button {
         width: 148px;
@@ -58,10 +65,9 @@
         color: rgba(0, 0, 0, 0.41);
       }
 
-    }
-
-    .profilesList_profiles_item:hover {
-      border: 1px solid #000000;
+      &:hover {
+        border: 1px solid #000000;
+      }
     }
   }
 }
