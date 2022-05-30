@@ -2,6 +2,7 @@ import {useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import './ProfileCard.scss';
 import apiClient from '../../api/ApiClient';
+import ProfileHeader from './components/profile-name/ProfileHeader';
 
 export default function ProfileCard() {
     const params = useParams();
@@ -29,31 +30,7 @@ export default function ProfileCard() {
 
     return (
         <>
-            <div className="profile-name">
-                <div className="profile-name_wrapper">
-                    <div className="profile-name_frame"></div>
-                    <div className="profile-name_title">
-                        <h1>{chosenProfile ? `${chosenProfile?.surname} ${chosenProfile?.name}` : ''}</h1>
-                    </div>
-                    <div className="profile-name_frame"></div>
-                </div>
-
-                <div className="profile-information">
-                    <div className="profile-information_wrapper">
-                        <div className="profile-information_item">
-                            <p>{chosenProfile?.city}</p>
-                        </div>
-                        <div className="profile-information_item">
-                            <p>{chosenProfile?.email}</p>
-                        </div>
-                        <div className="profile-information_item">
-                            <p>{chosenProfile?.phone}</p>
-                        </div>
-                        <button className="profile-information_button">Написать сообщение</button>
-                        <button className="profile-information_button second">Предложить сходить на концерт</button>
-                    </div>
-                </div>
-            </div>
+            <ProfileHeader profileCard={chosenProfile}/>
 
             <div className="profile-posts">
                 <div className="profile-posts_wrapper">
