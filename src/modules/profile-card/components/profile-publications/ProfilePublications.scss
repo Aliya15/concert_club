@@ -1,0 +1,56 @@
+.profile-publications {
+  box-sizing: border-box;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+
+  &_wrapper {
+    width: 1116px;
+  }
+
+  h2 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    margin: 22px 0;
+  }
+
+  &_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+  }
+
+  &_item {
+    width: 154px;
+    height: 154px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+
+    &:nth-child(1) {
+      background: #63B4EE;
+    }
+
+    &:nth-child(2) {
+      background: #2B9FF2;
+    }
+
+    &:nth-child(3) {
+      background: #547FED;
+    }
+
+    &:nth-child(4) {
+      background: #4366E1;
+    }
+
+    &:nth-child(5) {
+      background: #2040B0;
+    }
+
+    &:nth-child(6) {
+      background: #0C257C;
+    }
+  }
+}

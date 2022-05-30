@@ -2,7 +2,9 @@ import {useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 import './ProfileCard.scss';
 import apiClient from '../../api/ApiClient';
-import ProfileHeader from './components/profile-name/ProfileHeader';
+import ProfileHeader from './components/profile-header/ProfileHeader';
+import ProfilePosts from './components/profile-posts/ProfilePosts';
+import ProfilePublications from './components/profile-publications/ProfilePublications';
 
 export default function ProfileCard() {
     const params = useParams();
@@ -31,39 +33,8 @@ export default function ProfileCard() {
     return (
         <>
             <ProfileHeader profileCard={chosenProfile}/>
-
-            <div className="profile-posts">
-                <div className="profile-posts_wrapper">
-                    <h2>Посты</h2>
-                    <div className="profile-posts_item">
-                        {profilesPosts?.map((item) => {
-                            return (
-                                <div key={item.id} className="profile-posts_item_info">
-                                    <div className="profile-posts_item_title">
-                                        <h2>{item.title}</h2>
-                                        <p>{item.date}</p>
-                                    </div>
-                                    <p className="profile-posts_item_text">{item.text}</p>
-                                </div>
-                            );
-                        })
-                        }
-                    </div>
-                </div>
-            </div>
-            <div className="profile-publications">
-                <div className="profile-publications_wrapper">
-                    <h2>Публикации</h2>
-                    <div className="profile-publications_block">
-                        <div className="profile-publications_item"></div>
-                        <div className="profile-publications_item"></div>
-                        <div className="profile-publications_item"></div>
-                        <div className="profile-publications_item"></div>
-                        <div className="profile-publications_item"></div>
-                        <div className="profile-publications_item"></div>
-                    </div>
-                </div>
-            </div>
+            <ProfilePosts posts={profilesPosts}/>
+            <ProfilePublications/>
         </>
     );
 }
