@@ -60,6 +60,8 @@
     "detailed-post": {
         "id": "detaliedPostMock",
         "title": "Twenty One Pilots",
+        "date": "10.01.22",
+        "author": "Семен Иванов",
         "comments": [
             {
                 "id": "firstComment",
