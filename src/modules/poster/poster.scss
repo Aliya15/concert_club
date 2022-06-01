@@ -1,12 +1,16 @@
 .poster {
   display: flex;
   justify-content: center;
-  background-image: url('../../assets/images/banner.jpg');
+  background-color: #101010;
   height: 439px;
   background-size: cover;
   position: relative;
 
-  &_shadow {
+  body:not(._visually-impaired) & {
+    background-image: url('../../assets/images/banner.jpg');
+  }
+
+  :not(._visually-impaired) &_shadow {
     width: 593px;
     height: 156px;
     position: absolute;
