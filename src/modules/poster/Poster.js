@@ -11,7 +11,7 @@ export default function Poster() {
                     <h3>22.02.23 в 21:00</h3>
                 </div>
                 <div className="poster_button">
-                    <Button variant="contained"><span>Купить билет</span></Button>
+                    <Button variant="contained" color="secondary"><span>Купить билет</span></Button>
                 </div>
             </div>
         </section>

@@ -11,8 +11,8 @@ export default function Header() {
             <div className="header_wrapper">
                 <h1 className="header_title" onClick={() => navigate(`/`)}>Concert Club</h1>
                 <div className="header_buttons">
-                    <Button variant="contained"><span>Версия для слабовидящих</span></Button>
-                    <Button variant="contained"><span>Мой профиль</span></Button>
+                    <Button variant="contained" color="secondary"><span>Версия для слабовидящих</span></Button>
+                    <Button variant="contained" color="secondary"><span>Мой профиль</span></Button>
                 </div>
             </div>
         </header>
