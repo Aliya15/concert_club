@@ -10,6 +10,10 @@
     font-size: var(--font-size-4);
   }
 
+  ._visually-impaired &_text {
+    line-height: 2em;
+  }
+
   &_author,
   &_date {
     font-family: 'Open Sans';

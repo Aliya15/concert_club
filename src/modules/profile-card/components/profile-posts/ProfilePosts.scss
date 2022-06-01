@@ -40,6 +40,10 @@
       color: rgba(0, 0, 0, 0.41);
     }
 
+    ._visually-impaired &_text {
+      line-height: 2em!important;
+    }
+
     &_info {
       box-sizing: border-box;
       border: 1px solid #000000;
