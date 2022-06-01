@@ -26,22 +26,40 @@
       color: #000000;
     }
 
-    p:first-of-type {
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 20px;
-      margin: 0 0 16px;
-    }
+    &_blocks {
+      border-left: 2px solid rgba(13, 30, 75, 0.2);
+      padding-left: 42px;
+      position: relative;
 
-    p:last-of-type {
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 24px;
-      color: #939393;
+      &:before {
+        display: flex;
+        position: absolute;
+        width: 8px;
+        height: 56px;
+        background-color: #0D1E4B;
+        content: '';
+        left: -5px;
+        top: calc(50% - 28px);
+      }
+
+      p:first-of-type {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0 0 16px;
+      }
+
+      p:last-of-type {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #939393;
+        margin: 0;
+      }
     }
   }
 
