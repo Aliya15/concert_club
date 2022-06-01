@@ -1,0 +1,13 @@
+.post-comment-item {
+  margin-bottom: 16px;
+
+  &_comment,
+  &_author {
+    margin: 0;
+  }
+
+  &_author {
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.41);
+  }
+}

@@ -1,0 +1,27 @@
+.post {
+  width: 1116px;
+  margin: auto;
+
+  &_meta-information > *:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &_author,
+  &_date {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.41);
+  }
+
+  &_title {
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+  }
+}
