@@ -21,7 +21,7 @@
       font-family: 'Alegreya Sans SC';
       font-style: normal;
       font-weight: 500;
-      font-size: 35px;
+      font-size: var(--font-size-12);
       line-height: 40px;
       color: #000000;
     }
@@ -46,7 +46,7 @@
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
+        font-size: var(--font-size-4);
         line-height: 20px;
         margin: 0 0 16px;
       }
@@ -55,7 +55,7 @@
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
+        font-size: var(--font-size-3);
         line-height: 24px;
         color: #939393;
         margin: 0;
@@ -75,7 +75,7 @@
       font-family: 'Open Sans', serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 18px;
+      font-size: var(--font-size-7);
       color: #000000;
       text-align: start;
     }
@@ -95,14 +95,14 @@
     &_submit {
       margin-top: 16px;
       padding: 10px 20px;
-      width: 101px;
-      height: 35px;
+      min-width: 101px;
+      min-height: 35px;
       background: #101010;
       border: 1px solid #0D1E4B;
       font-family: 'Open Sans', serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 11px;
+      font-size: var(--font-size-1);
       color: #FFFFFF;
     }
   }

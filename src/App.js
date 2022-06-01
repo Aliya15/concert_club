@@ -8,7 +8,6 @@ import PostPage from './pages/PostPage';
 
 const darkTheme = createTheme({
     palette: {
-        // mode: 'dark',
         primary: {
             main: '#262626',
             darker: '#000',

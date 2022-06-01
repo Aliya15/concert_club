@@ -29,7 +29,7 @@
       font-family: 'Alegreya Sans SC', sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 35px;
+      font-size: var(--font-size-12);
       color: #000000;
       margin-left: 40px;
     }
@@ -47,7 +47,6 @@
     }
 
     &_item {
-      height: 45px;
       box-sizing: border-box;
       border-right: 1px solid #000000;
       flex-grow: 1;
@@ -62,7 +61,7 @@
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: var(--font-size-5);
         color: #000000;
         margin: 11px 23px;
       }
@@ -70,13 +69,12 @@
 
     &_button {
       width: 182px;
-      height: 45px;
       background: #101010;
       border: 1px solid #0D1E4B;
       font-family: 'Open Sans', sans-serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 11px;
+      font-size: var(--font-size-1);
       line-height: 15px;
       color: #FFFFFF;
       cursor: pointer;
