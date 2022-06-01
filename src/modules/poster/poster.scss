@@ -4,12 +4,22 @@
   background-image: url('../../assets/images/banner.jpg');
   height: 439px;
   background-size: cover;
+  position: relative;
+
+  &_shadow {
+    width: 593px;
+    height: 156px;
+    position: absolute;
+    top: calc(50% - 79px);
+    background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
 
   &_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1116px;
+    z-index: 1;
   }
 
   &_title {

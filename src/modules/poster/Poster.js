@@ -14,6 +14,7 @@ export default function Poster() {
                     <Button variant="contained" color="secondary"><span>Купить билет</span></Button>
                 </div>
             </div>
+            <div className="poster_shadow"></div>
         </section>
     );
 }

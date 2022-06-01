@@ -4,7 +4,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 63px;
 
   &_wrapper {
     display: grid;
@@ -14,11 +14,14 @@
     column-gap: 38px;
   }
 
-  h2 {
+  &_title {
     margin: 0;
-    font-family: 'Alegreya Sans SC', serif;
+    font-family: 'Alegreya Sans SC';
     font-style: normal;
     font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
   }
 
   p {

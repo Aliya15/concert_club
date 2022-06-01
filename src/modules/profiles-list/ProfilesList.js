@@ -23,7 +23,10 @@ export default function ProfilesList() {
             <div className="profiles-list_wrapper">
                 <div className="profiles-list_title">
                     <h2>Купили билеты</h2>
-                    <p>932/1000</p>
+                    <div className="profiles-list_counter">
+                        <span className="profiles-list_counter-value">932/</span>
+                        <span className="profiles-list_counter-value _total">1000</span>
+                    </div>
                 </div>
                 <div className="profiles-list_profiles">
                     {

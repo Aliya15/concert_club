@@ -8,10 +8,34 @@
     width: 1116px;
   }
 
+  &_counter {
+    &-value {
+      font-family: 'Alegreya Sans SC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 40px;
+      color: #000;
+
+      &._total {
+        color: #e0e0e0
+      }
+    }
+  }
+
   &_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    h2 {
+      font-family: 'Alegreya Sans SC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 40px;
+      color: #000000;
+    }
   }
 
   &_profiles {
@@ -24,6 +48,9 @@
       min-width: 239px;
       width: 100%;
       height: 143px;
+      padding: 17px;
+      display: flex;
+      flex-direction: column;
       box-sizing: border-box;
       text-align: start;
 
@@ -42,12 +69,12 @@
         font-size: 11px;
         text-transform: capitalize;
         color: #FFFFFF;
-        margin-left: 17px;
+        margin-top: auto;
         cursor: pointer;
       }
 
       h4 {
-        margin-left: 17px;
+        margin: 0 0 4px;
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -57,7 +84,7 @@
       }
 
       p {
-        margin-left: 17px;
+        margin: 0;
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
